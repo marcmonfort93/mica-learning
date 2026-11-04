@@ -174,13 +174,8 @@ svg { fill: currentColor; }
 .person h3 { font-size: 1.15rem; margin-top: 16px; }
 .person__role { font-weight: 600; font-size: .92rem; color: var(--purple-d); margin: 4px 0 8px; }
 .person p:last-child { font-size: .95rem; color: var(--muted); }
-.person__photo { aspect-ratio: 3 / 4; border-radius: var(--r-m); overflow: hidden; display: flex; align-items: flex-end; justify-content: center; }
+.person__photo { aspect-ratio: 3 / 4; border-radius: var(--r-m); overflow: hidden; display: flex; align-items: flex-end; justify-content: center; background: #ece3ee; }
 .person__photo img { width: 100%; height: 100%; object-fit: cover; object-position: top center; }
-.person--yellow .person__photo { background: var(--sun); }
-.person--orange .person__photo { background: var(--orange); }
-.person--red .person__photo { background: var(--red); }
-.person--purple .person__photo { background: var(--purple); }
-.person--sky .person__photo { background: #cfe0f5; }
 
 /* ---------- Calendari + novetats ---------- */
 .two { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
