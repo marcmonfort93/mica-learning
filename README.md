@@ -1,25 +1,31 @@
-# MICA Learning | Mockup de la nova web
+# MICA Learning | Mockup de la nueva web
 
-Prototip estàtic (HTML, CSS i JS, sense dependències) per presentar al client.
-No és la web publicada: el formulari no envia res i els enllaços de Calendari, Notícies i idiomes són de mostra.
+Prototipo estático (HTML, CSS y JS, sin dependencias) para presentar al cliente.
+No es la web publicada: los formularios no envían nada y los enlaces de Calendario, Noticias e idioma EN son de muestra.
 
-## Com veure'l
-Obre `index.html` al navegador. Per publicar-lo amb GitHub Pages: Settings > Pages > Deploy from branch > `main` / root.
+- `index.html`: versión en castellano (raíz, igual que la web actual).
+- `ca/index.html`: versión en catalán.
+- `SEO.md`: palabras clave, qué hay hecho y qué falta.
 
-## Decisions de disseny
-- Paleta treta del logo i de la web actual: lila `#75557A`, taronja `#F37335`, groc, vermell i fons blau clar `#F2F7FD`.
-- La corba del logo (el "somriure" de *learning is[cool]*) es fa servir com a divisor entre seccions.
-- Tipografies: Bricolage Grotesque (títols) i Figtree (text), via Google Fonts.
-- Botó principal lila (contrast correcte amb text blanc); el groc queda per a la crida a la prova de nivell gratuïta.
-- Usabilitat: telèfon, horari i adreça sempre visibles, filtre de cursos, accessos per perfil ("Què busques?"), formulari amb camp "Per a qui és?" i barra Truca / WhatsApp en mòbil.
+## Cómo verlo
+Abre `index.html` en el navegador (necesita conexión para las fotos y las tipografías).
+Para publicarlo con GitHub Pages: Settings > Pages > Deploy from branch > `main` / root.
 
-## Imatges
-Logo, fotos de l'equip, fotos d'aula i logo de Cambridge s'enllacen directament des de `micalearning.es`.
-Abans de lliurar la web final cal descarregar-les a una carpeta `img/` pròpia.
+## Decisiones de diseño
+- Paleta sacada del logo y de la web actual: lila `#75557A`, naranja `#F37335`, amarillo, rojo y fondo azul claro `#F2F7FD`.
+- La curva del logo (la "sonrisa" de *learning is[cool]*) se usa como divisor entre secciones.
+- Tipografías: Bricolage Grotesque (títulos) y Figtree (texto), vía Google Fonts.
+- Botón principal lila (buen contraste con texto blanco); el amarillo se reserva para la llamada a reservar la prueba gratuita.
+- Captación de leads: botón amarillo fijo en la cabecera, formulario rápido (nombre y teléfono) justo bajo el hero, formulario completo con "¿Para quién es?" y barra fija Llamar / WhatsApp / Prueba gratis en móvil.
 
-## Pendent de confirmar amb el client
-- Número de WhatsApp (ara `661 596 206`, el primer telèfon).
-- Descripcions, preus i horaris dels cursos d'empreses, intensiu d'exàmens i speaking (a la web actual no n'hi ha).
-- Enllaços reals de calendari escolar, notícies, ES i EN.
-- Xarxes socials d'Eric i Joe, i si es mostren les d'altres membres.
-- Que el formulari enviï a un correu o a un CRM.
+## Imágenes
+Logo, fotos del equipo, fotos de aula y logo de Cambridge se enlazan directamente desde `micalearning.es`.
+Antes de entregar la web final hay que descargarlas a una carpeta `img/` propia.
+
+## Pendiente de confirmar con el cliente
+- Número de WhatsApp (ahora `661 596 206`, el primer teléfono).
+- Descripciones, precios y horarios de empresas, intensivo de exámenes y speaking (en la web actual no hay).
+- Que el proceso de la prueba sea "te contactamos para concretar día y hora" (es una propuesta de texto).
+- Enlaces reales de calendario escolar, noticias y versión EN.
+- Redes sociales de Eric y Joe.
+- A dónde llegan los formularios (correo o CRM).
