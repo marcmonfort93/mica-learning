@@ -1,10 +1,11 @@
-// Menú mòbil
+// Menú móvil
 const burger = document.getElementById('burger');
 const menu = document.getElementById('menu');
+const labels = burger.dataset.labels ? burger.dataset.labels.split('|') : ['Abrir el menú', 'Cerrar el menú'];
 burger.addEventListener('click', () => {
   const open = menu.classList.toggle('is-open');
   burger.setAttribute('aria-expanded', String(open));
-  burger.setAttribute('aria-label', open ? 'Tanca el menú' : 'Obre el menú');
+  burger.setAttribute('aria-label', open ? labels[1] : labels[0]);
 });
 menu.addEventListener('click', (e) => {
   if (e.target.closest('a')) {
@@ -13,7 +14,7 @@ menu.addEventListener('click', (e) => {
   }
 });
 
-// Filtre de cursos
+// Filtro de cursos
 const chips = document.querySelectorAll('.chip');
 const courses = document.querySelectorAll('.course');
 
@@ -29,20 +30,21 @@ function filterCourses(value) {
 }
 chips.forEach((c) => c.addEventListener('click', () => filterCourses(c.dataset.filter)));
 
-// Els accessos de "Què busques?" apliquen el filtre corresponent
+// Los accesos de "Qué buscas" aplican el filtro correspondiente
 document.querySelectorAll('.path[data-go]').forEach((p) => {
   p.addEventListener('click', () => filterCourses(p.dataset.go));
 });
 
-// Formulari (simulat: en aquest prototip no s'envia res)
-const form = document.getElementById('form');
-const ok = document.getElementById('ok');
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
-  if (!form.checkValidity()) {
-    form.reportValidity();
-    return;
-  }
-  ok.hidden = false;
-  form.reset();
+// Formularios (simulados: en este prototipo no se envía nada)
+document.querySelectorAll('form[data-lead]').forEach((form) => {
+  const ok = form.querySelector('.form__ok');
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    if (!form.checkValidity()) {
+      form.reportValidity();
+      return;
+    }
+    ok.hidden = false;
+    form.reset();
+  });
 });
